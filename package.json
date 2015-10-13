@@ -1,0 +1,6 @@
+{
+  "name" : "perttu-cv",
+  "version": "0.0.1",
+  "dependencies" :
+    { "express" : "latest" }
+}
