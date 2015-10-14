@@ -1,6 +1,6 @@
 // Example: All of Primer
 $primary-color: rgb(149, 25, 226);
-$borders-on: 2px dashed #000000;
+$borders-on: 1px dashed #000000;
 $padding: 2%;
 $base-font-size: 16px;
 
@@ -11,34 +11,46 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0px;
 }
-
+div {
+  // border: $borders-on;
+}
 #header {
   width: 100%;
   padding: $padding;
   background-color: $primary-color;
   color: #ffffff;
-  border: $borders-on;
-vertical-align: middle;
+  //border: $borders-on;
+  vertical-align: middle;
+  position: relative;
+
+  a {
+    color: #ffffff;
+  }
 }
 
 #content {
   //padding: $padding;
-  border: $borders-on;
+  //border: $borders-on;
 }
 
 #footer {
   padding: $padding;
   background-color: darken($primary-color, 10);
   color: #ffffff;
-  border: $borders-on;
+  //border: $borders-on;
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
-#curly {
-
+.links {
+  vertical-align: bottom;
+  //border: $borders-on;
+  position: relative;
+  bottom: -50px;
+  right: 0;
+  display: flex;
 }
 
 .big {

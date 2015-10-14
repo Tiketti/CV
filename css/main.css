@@ -415,7 +415,6 @@ body {
 }
 
 a {
-  color: #4078c0;
   text-decoration: none;
 }
 a:hover, a:active {
@@ -2169,23 +2168,29 @@ body {
   padding: 2%;
   background-color: #9519e2;
   color: #ffffff;
-  border: 2px dashed #000000;
   vertical-align: middle;
+  position: relative;
 }
-
-#content {
-  border: 2px dashed #000000;
+#header a {
+  color: #ffffff;
 }
 
 #footer {
   padding: 2%;
   background-color: #7714b4;
   color: #ffffff;
-  border: 2px dashed #000000;
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.links {
+  vertical-align: bottom;
+  position: relative;
+  bottom: -50px;
+  right: 0;
+  display: flex;
 }
 
 .big {
