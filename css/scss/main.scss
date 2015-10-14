@@ -18,14 +18,13 @@ body {
   margin: 0px;
 }
 div {
-  // border: $borders-on;
+  //border: $borders-on;
 }
 #header {
   width: 100%;
   padding: $padding;
   background-color: $primary-color;
   color: #ffffff;
-  //border: $borders-on;
   vertical-align: middle;
   position: relative;
   @include box-shadow();
@@ -36,7 +35,6 @@ div {
 }
 
 #content {
-  //border: $borders-on;
   margin: 20px 0 0 0;
 }
 
@@ -44,7 +42,6 @@ div {
   padding: $padding;
   background-color: lighten($primary-color, 10);
   color: #ffffff;
-  //border: $borders-on;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -54,7 +51,6 @@ div {
 
 .links {
   vertical-align: bottom;
-  //border: $borders-on;
   position: relative;
   bottom: -30px;
   right: 0;

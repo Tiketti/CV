@@ -1,8 +1,29 @@
-<div class="row">
-  <div class="col-xs-2">
-    <button class="form-control btn btn-default">
-        <span class="glyphicon glyphicon-thumbs-up"></span>
-        {{message}}
-      </button>
+
+<!-- I am template app.html
+<br />
+{{beginTime}}
+-->
+<div id="jobHistory" ng-hide="hideJobHistory">
+  <h2>Työhistoria</h2>
+
+  <div class="container" ng-repeat="company in companies | orderBy: '-beginTime'">
+    <div class="column one-third">{{company.name}}</div>
+    <div class="column one-third">{{company.beginTime}} - {{company.endTime}}</div>
+  </div>
+</div>
+
+<div id="aboutMe" ng-hide="hideAboutMe">
+  <h2>Minusta</h2>
+
+  <div class="container">
+    <div class="column four-fifths">
+      <p>Nautin ohjelmoinnin tarjoamista loogisista haasteista, ratkaisujen keksimisestä ja uuden oppimisesta. Työhistoriaani kuuluu enemmän backend-ohjelmointia, mutta osaan koodata sovelluksen tietovarastosta tietomallien kautta APIin ja käyttöliittymään käyttökokemusta sekä testausta unohtamatta. Seuraavaksi aion syventää osaamistani HTML5:n, CSS3:n ja ylipäätään frontend -ohjelmoinnin suuntaan.</p>
+
+      <p>Olen luonteeltani innostunut ja positiivinen, mistä kertoo myös nykyisessä työpaikassani voittamani Vuoden positiivisin -palkinto. Ollen työsuojeluvaltuutettu sekä huvitoimikunnan jäsen. Ideoin ja järjestin työpaikan juoksukoulun alkuvuodesta 2015.</p>
+
+      <p>Perheeseeni kuuluu vaimo sekä vuosina 2007 ja 2010 syntyneet tytöt.</p>
+
+    </div>
+
   </div>
 </div>
