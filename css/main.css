@@ -405,11 +405,11 @@ input,
 select,
 textarea,
 button {
-  font: 13px/1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font: 14px/1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 body {
-  font: 13px/1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font: 14px/1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   color: #333;
   background-color: #fff;
 }
@@ -541,7 +541,7 @@ pre {
 }
 
 .container {
-  width: 980px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -2158,7 +2158,6 @@ a.tabnav-extra:hover {
 }
 
 body {
-  font-size: 16px;
   font-family: 'Roboto', sans-serif;
   margin: 0px;
 }
@@ -2170,31 +2169,41 @@ body {
   color: #ffffff;
   vertical-align: middle;
   position: relative;
+  -webkit-box-shadow: 0px 0 8px #000 ;
+  -moz-box-shadow: 0px 0 8px #000 ;
+  box-shadow: 0px 0 8px #000 ;
 }
 #header a {
   color: #ffffff;
 }
 
+#content {
+  margin: 20px 0 0 0;
+}
+
 #footer {
   padding: 2%;
-  background-color: #7714b4;
+  background-color: #aa44ea;
   color: #ffffff;
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
+  -webkit-box-shadow: 0px 0 8px #000 ;
+  -moz-box-shadow: 0px 0 8px #000 ;
+  box-shadow: 0px 0 8px #000 ;
 }
 
 .links {
   vertical-align: bottom;
   position: relative;
-  bottom: -50px;
+  bottom: -30px;
   right: 0;
   display: flex;
 }
 
 .big {
-  font-size: 48px;
+  font-size: 42px;
 }
 
 /*# sourceMappingURL=main.css.map */

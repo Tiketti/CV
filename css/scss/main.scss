@@ -2,12 +2,18 @@
 $primary-color: rgb(149, 25, 226);
 $borders-on: 1px dashed #000000;
 $padding: 2%;
-$base-font-size: 16px;
+$body-font-size: 14px;
+$container-width: 100%;
 
 @import "primer-scss/primer";
 
+@mixin box-shadow($left:0, $top:0px, $blur:8px, $color:#000, $inset:"") {
+  -webkit-box-shadow:$top $left $blur $color #{$inset};
+  -moz-box-shadow:$top $left $blur $color #{$inset};
+  box-shadow:$top $left $blur $color #{$inset};
+}
+
 body {
-  font-size: $base-font-size;
   font-family: 'Roboto', sans-serif;
   margin: 0px;
 }
@@ -22,6 +28,7 @@ div {
   //border: $borders-on;
   vertical-align: middle;
   position: relative;
+  @include box-shadow();
 
   a {
     color: #ffffff;
@@ -29,30 +36,31 @@ div {
 }
 
 #content {
-  //padding: $padding;
   //border: $borders-on;
+  margin: 20px 0 0 0;
 }
 
 #footer {
   padding: $padding;
-  background-color: darken($primary-color, 10);
+  background-color: lighten($primary-color, 10);
   color: #ffffff;
   //border: $borders-on;
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
+  @include box-shadow();
 }
 
 .links {
   vertical-align: bottom;
   //border: $borders-on;
   position: relative;
-  bottom: -50px;
+  bottom: -30px;
   right: 0;
   display: flex;
 }
 
 .big {
-  font-size: $base-font-size * 3;
+  font-size: $body-font-size * 3;
 }
