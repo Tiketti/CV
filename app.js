@@ -1,9 +1,21 @@
-var express = require('express'),
-app = express();
+'use strict';
 
-app.use(express.static(__dirname));
-app.get('/', function(req, res) {
-    res.sendfile('index.html', {root: __dirname })
+angular.module('myApp',['ui.router']).config(function($stateProvider, $urlRouterProvider) {
+
+    $urlRouterProvider.otherwise('/');
+
+    $stateProvider
+      .state('home', {
+          url: '/',
+          templateUrl: 'app/app.html',
+          controller: 'AppCtrl'
+      })
+      .state('sub', {
+          url: '/sub',
+          templateUrl: 'app/sub.html',
+          controller: 'AppCtrl'
+      });
+
+}).run(function () {
+
 });
-var server = app.listen(process.env.PORT || 8080);
-console.log("Server listening");

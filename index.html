@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
   <head>
-    <link href="css/main.css" rel="stylesheet" type="style/css"  />
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <title>Perttu Haliseva - CV</title>
+    <link href="css/main.css" rel="stylesheet" type="style/css"  />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,300" rel="stylesheet" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-route.js"></script>
+    <script type="text/javascript" src="app.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="app/controller.js" charset="UTF-8"></script>
   </head>
   <body>
     <div id="header" class="container">
@@ -20,7 +26,8 @@
 
     <div class="container">
       <div class="single-column column centered">
-        <div id="content">Hello, World.</div>
+        <div id="content">Content in index.html</div>
+        <div ui-view=""></div>
       </div>
     </div>
 
