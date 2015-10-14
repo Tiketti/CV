@@ -1,20 +1,46 @@
-$primary-color: rgb(32, 134, 6);
+// Example: All of Primer
+$primary-color: rgb(149, 25, 226);
+$borders-on: 2px dashed #000000;
+$padding: 2%;
+$base-font-size: 16px;
+
+@import "primer-scss/primer";
 
 body {
-  margin:0px;
+  font-size: $base-font-size;
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
 }
 
 #header {
   width: 100%;
-  padding: 5%;
+  padding: $padding;
   background-color: $primary-color;
   color: #ffffff;
+  border: $borders-on;
+vertical-align: middle;
 }
 
 #content {
-
+  //padding: $padding;
+  border: $borders-on;
 }
 
 #footer {
+  padding: $padding;
+  background-color: darken($primary-color, 10);
+  color: #ffffff;
+  border: $borders-on;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 
+#curly {
+
+}
+
+.big {
+  font-size: $base-font-size * 3;
 }
