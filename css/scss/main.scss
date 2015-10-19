@@ -1,9 +1,10 @@
 // Example: All of Primer
-$primary-color: rgb(149, 25, 226);
+$primary-color: #ffffff;
 $borders-on: 1px dashed #000000;
 $padding: 2%;
 $body-font-size: 14px;
 $container-width: 100%;
+$full-row-color: #ff8614;
 
 @import "primer-scss/primer";
 
@@ -13,10 +14,18 @@ $container-width: 100%;
   box-shadow:$top $left $blur $color #{$inset};
 }
 
-body {
+html, body {
   font-family: 'Roboto', sans-serif;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
+
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+
 div {
   //border: $borders-on;
 }
@@ -24,29 +33,40 @@ div {
   width: 100%;
   padding: $padding;
   background-color: $primary-color;
-  color: #ffffff;
+  color: #000000;
   vertical-align: middle;
   position: relative;
   @include box-shadow();
 
   a {
-    color: #ffffff;
+    color: #000000;
   }
 }
 
 #content {
   margin: 20px 0 0 0;
+  padding-bottom:100px; /* Height of the footer element */
 }
 
 #footer {
   padding: $padding;
   background-color: lighten($primary-color, 10);
-  color: #ffffff;
+  color: #000000;
   width: 100%;
-  position: absolute;
+  height:100px;
+  //position: absolute;
   bottom: 0;
   left: 0;
   @include box-shadow();
+}
+
+.fullRow {
+  width: 100%;
+  margin-bottom: 3em;
+  background-color: $full-row-color;
+  padding: 1em;
+  border-top: 1px solid #000000;
+  //@include box-shadow(0, 0, 3px, $full-row-color);
 }
 
 .links {
@@ -59,4 +79,5 @@ div {
 
 .big {
   font-size: $body-font-size * 3;
+  font-weight: bold;
 }

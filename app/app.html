@@ -1,9 +1,6 @@
 
-<!-- I am template app.html
-<br />
-{{beginTime}}
--->
-<div id="jobHistory" ng-hide="hideJobHistory">
+<!-- I am template app.html -->
+<div id="jobHistory" class="fullRow" ng-hide="hideJobHistory">
   <h2>Työhistoria</h2>
 
   <div class="container" ng-repeat="company in companies | orderBy: '-beginTime'">
@@ -12,18 +9,37 @@
   </div>
 </div>
 
-<div id="aboutMe" ng-hide="hideAboutMe">
+<div id="aboutMe" class="fullRow" ng-hide="hideAboutMe">
   <h2>Minusta</h2>
 
   <div class="container">
     <div class="column four-fifths">
       <p>Nautin ohjelmoinnin tarjoamista loogisista haasteista, ratkaisujen keksimisestä ja uuden oppimisesta. Työhistoriaani kuuluu enemmän backend-ohjelmointia, mutta osaan koodata sovelluksen tietovarastosta tietomallien kautta APIin ja käyttöliittymään käyttökokemusta sekä testausta unohtamatta. Seuraavaksi aion syventää osaamistani HTML5:n, CSS3:n ja ylipäätään frontend -ohjelmoinnin suuntaan.</p>
 
-      <p>Olen luonteeltani innostunut ja positiivinen, mistä kertoo myös nykyisessä työpaikassani voittamani Vuoden positiivisin -palkinto. Ollen työsuojeluvaltuutettu sekä huvitoimikunnan jäsen. Ideoin ja järjestin työpaikan juoksukoulun alkuvuodesta 2015.</p>
+      <p>Olen luonteeltani innostunut ja positiivinen, mistä kertoo myös nykyisessä työpaikassani voittamani Vuoden positiivisin -palkinto. Olen työsuojeluvaltuutettu sekä huvitoimikunnan jäsen. Ideoin ja järjestin työpaikan juoksukoulun alkuvuodesta 2015.</p>
 
       <p>Perheeseeni kuuluu vaimo sekä vuosina 2007 ja 2010 syntyneet tytöt.</p>
 
     </div>
 
+  </div>
+</div>
+
+<div id="languageSkills" class="fullRow" ng-hide="hideLanguageSkills">
+  <h2>Kielitaito</h2>
+
+  <div class="container" ng-repeat="lang in languages">
+    <div class="column one-third">{{lang.name}}, {{lang.level}}</div>
+  </div>
+</div>
+
+<div id="hobbies" class="fullRow" ng-hide="hideHobbies">
+  <h2>Harrastukset</h2>
+
+  <div class="container">
+    <div class="column four-fifths">
+      <p>Juokseminen, uinti, kuntosali. Ensimmäisen maratonini juoksin vuonna 2012 ja tällä hetkellä olen täysmatkan juossut kuusi kertaa.</p>
+      <p>Lisäksi kaikenlainen teknologia ja gadgetit kiinnostavat. Olen myös suuri craft beerin ystävä.</p>
+    </div>
   </div>
 </div>

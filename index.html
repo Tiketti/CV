@@ -12,26 +12,27 @@
     <script type="text/javascript" src="app/controller.js" charset="UTF-8"></script>
   </head>
   <body>
-    <div id="header" class="container">
+    <div id="wrapper">
+      <div id="header" class="container">
 
-      <div class="two-thirds column">
-        <span class="big">{&nbsp;Perttu Haliseva CV&nbsp;}</span>
+        <div class="two-thirds column">
+          <span class="big">{&nbsp;Perttu Haliseva CV&nbsp;}</span>
+        </div>
+
+        <div class="links one-third column">
+            <div class="one-half"><a href="http://twitter.com/Tiketti"><img class="avatar avatar-small" src="i/TwitterLogo_white.png" width="32" height="32" />Twitter</a></div>
+            <div class="one-half"><a href="https://github.com/Tiketti"><img class="avatar avatar-small" src="i/GitHub-Mark-Light-120px-plus.png" width="32" height="32">&nbsp;Github</a></div>
+        </div>
       </div>
 
-      <div class="links one-third column">
-          <div class="one-half"><a href="http://twitter.com/Tiketti"><img class="avatar avatar-small" src="i/TwitterLogo_white.png" width="32" height="32" />Twitter</a></div>
-          <div class="one-half"><a href="https://github.com/Tiketti"><img class="avatar avatar-small" src="i/GitHub-Mark-Light-120px-plus.png" width="32" height="32">&nbsp;Github</a></div>
-      </div>
+      <!--<div class="container">
+        <div class="single-column column centered">-->
+          <!-- <div id="content">Content in index.html</div> -->
+          <div ui-view=""></div>
+        <!--</div>
+      </div>-->
+
+      <div id="footer">+358-40769 4639 | perttu &auml;t gmail.com</div>
     </div>
-
-    <div class="container">
-      <div class="single-column column centered">
-        <!-- <div id="content">Content in index.html</div> -->
-        <div ui-view=""></div>
-      </div>
-    </div>
-
-    <div id="footer">Footer</div>
-
   </body>
 </html>

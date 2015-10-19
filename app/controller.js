@@ -7,6 +7,13 @@ angular.module('myApp').controller('AppCtrl', function($scope) {
     { name: "TJ Group", beginTime: "02/2000", endTime: "06/2001"}
   ];
 
+  $scope.languages = [
+    { name: "Suomi", "level": "äidinkieli" },
+    { name: "Englanti", "level": "erinomainen" },
+    { name: "Ruotsi", "level": "tyydyttävä" },
+    { name: "Saksa", "level": "perusteet" }
+  ];
+
   $scope.hideJobHistory = false;
   $scope.hideAboutMe = false;
 
